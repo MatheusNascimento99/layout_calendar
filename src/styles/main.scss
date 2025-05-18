@@ -48,3 +48,16 @@
     font-size: 30px;
   }
 }
+
+@each $day, $index in $days {
+  .calendar--start-day-#{$day} .calendar__day:nth-child(1) {
+    background-color: red;
+    margin-left: 594px;
+  }
+}
+
+@for $i from 28 through 30 {
+  .calendar--month-length-#{$i} .calendar__day:nth-child(n + #{$i + 1}) {
+    display: none;
+  }
+}
