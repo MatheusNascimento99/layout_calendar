@@ -2,6 +2,7 @@ $day-size: 98px;
 $border-size: 1px;
 $gap: 1px;
 $calendar-padding: 10px;
+$offset: $day-size + ($border-size * 2) + $gap;
 $days: (
   sun: 0,
   mon: 1,
