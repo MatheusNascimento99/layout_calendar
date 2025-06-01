@@ -49,7 +49,7 @@
 
 @each $day, $index in $days {
   .calendar--start-day-#{$day} .calendar__day:nth-child(1) {
-    margin-left: $index * $offset;
+    margin-left: calc(#{$index} * #{$offset});
   }
 }
 
