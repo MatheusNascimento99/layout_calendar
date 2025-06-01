@@ -51,7 +51,6 @@
 
 @each $day, $index in $days {
   .calendar--start-day-#{$day} .calendar__day:nth-child(1) {
-    background-color: red;
     margin-left: 594px;
   }
 }
